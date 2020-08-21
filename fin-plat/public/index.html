@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>资金中台</title>
+    <meta http-equiv="pragram" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>faviconFit.ico" />
+    <!-- <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="static/normalize/normalize.css" /> -->
+  </head>
+  <body>
+    <noscript>
+      <strong>
+        We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without
+        JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+    <div id="app"></div>
+
+    <!-- built files will be auto injected -->
+    <!-- <script src="./static/lib/vue/vue.runtime.min.js"></script> -->
+    <!-- <script src="./static/lib/vue-router/vue-router.min.js"></script> -->
+    <!-- <script src="./static/lib/element-ui/element-ui@2.13.0.js"></script> -->
+    <!-- <script src="./static/lib/axios/axios.min.js"></script> -->
+    <!-- <script src="./static/lib/lodash/lodash@4.17.15.js"></script> -->
+    <!-- <script src="./static/lib/qs/qs@6.9.1.js"></script> -->
+    <script>
+      var _mtac = {};
+      (function() {
+        var mta = document.createElement('script');
+        mta.src = '//pingjs.qq.com/h5/stats.js?v2.0.4';
+        mta.setAttribute('name', 'MTAH5');
+        mta.setAttribute('sid', '500715972'); // 替换成你项目的 SID
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mta, s);
+      })();
+    </script>
+  </body>
+</html>

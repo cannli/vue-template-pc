@@ -1,0 +1,60 @@
+.el-button--text {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+//.el-button--default {
+//  border: #00a2ff 1px solid !important;
+//}
+
+.el-dialog__header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.el-dialog__body {
+  padding: 20px 20px 0 !important;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.el-dialog__footer {
+  padding-top: 20px !important;
+}
+
+// table
+.el-table {
+  width: 99.9% !important;
+}
+
+.el-table thead {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.el-table th {
+  background: #f5f5f5 !important;
+  // border-top: 1px solid #e9e9e9;
+}
+
+// loading
+.el-loading-spinner i {
+  font-size: 36px;
+}
+
+// 多选 的 字体颜色修改
+.el-tag.el-tag--info,
+.el-input.is-disabled .el-input__inner {
+  color: #606266 !important;
+}
+// 把input的num输入框改造成只能输入数字的输入框
+.input_num_styel {
+  span {
+    display: none;
+  }
+
+  .el-input {
+    .el-input__inner {
+      padding-right: 15px !important;
+      text-align: left;
+    }
+  }
+}

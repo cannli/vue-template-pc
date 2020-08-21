@@ -1,0 +1,92 @@
+// 全局属性
+
+$color-red: #f44336; // 错误
+$color-subject: #00a2ff; // 主题颜色，比如 按钮
+$color-warning: #ff9600; // 未确认，警告
+$color-err: #bfbfbf; // 禁用 ，为开始
+$color-success: #12be87; // 成功的颜色
+$color-divider: #ebebeb; // 分割线
+$color-text-85: rgba(0, 0, 0, 0.85); // title
+$color-text-65: rgba(0, 0, 0, 0.65); // sub - title
+$background-color-base: #f5f5f5;
+$background-color-card: #fff;
+$border-color: $color-subject 1px solid; // 主题色的border
+$color-err: #c0c4cc;
+
+// 字体大小
+$font-size-0: 0;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+
+// 字体权重
+$font-weight-bold: bold;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+
+// 继承 .class 使用 @extend
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 垂直居中的一种
+@mixin verticalAlign($align: middle) {
+  display: inline-block;
+  vertical-align: $align;
+}
+
+// 清除浮动
+.clearfloat {
+  display: block;
+  height: 0;
+  clear: both;
+  content: '';
+  visibility: hidden;
+}
+
+// 垂直水平居中 @include Absolute(50%, 20px, 0, -50%, right);
+@mixin Absolute($top: 50%, $left: 50%, $translateX: -50%, $translateY: -50%, $orientation: left) {
+  position: absolute;
+  top: $top;
+  -ms-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -o-transform: translate($translateX, $translateY);
+  transform: translate($translateX, $translateY);
+  #{$orientation}: $left;
+}
+
+// 垂直居中
+@mixin childAbsolute($top: 50%, $translateX: -50%, $translateY: -50%) {
+  position: absolute;
+  top: $top;
+  -ms-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -o-transform: translate($translateX, $translateY);
+  transform: translate($translateX, $translateY);
+}
+
+// 按钮 样式
+@mixin default-but-right($UpDown: 8px, $LeftR: 15px) {
+  padding: $UpDown $LeftR;
+  font-size: $font-size-14;
+  color: $color-subject;
+  cursor: pointer;
+  border: $border-color;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+// 标题title 样式
+@mixin title($size: $font-size-18, $weight: bold, $color: $color-text-85) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}

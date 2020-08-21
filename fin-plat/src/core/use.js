@@ -1,0 +1,15 @@
+import Vue from 'vue';
+import titleText from 'components/common/title/index.vue';
+import elDefaultTable from 'components/common/elTable/index.vue';
+import common from '@/assets/js/vue.extend.js';
+import noData from 'components/common/noData';
+import pagination from 'components/common/pagination/pagination.vue';
+import lodash from 'lodash';
+import loading from 'components/common/loading/loading.vue';
+Vue.use(common);
+Vue.prototype.lodash = lodash;
+Vue.component('titleText', titleText);
+Vue.component('elDefaultTable', elDefaultTable);
+Vue.component('noData', noData);
+Vue.component('pagination', pagination);
+Vue.component('loading', loading);

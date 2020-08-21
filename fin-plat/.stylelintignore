@@ -1,0 +1,5 @@
+# .gitignore syntax (uses node-ignore behind the scenes)
+
+public/
+node_module/
+dist/
